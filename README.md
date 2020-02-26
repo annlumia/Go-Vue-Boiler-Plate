@@ -1,5 +1,11 @@
 # Go & Vue Boiler Plate
 
+Before start, please install:
+
+- [NodeJs](https://nodejs.org/en/download/) v10 or later
+- [Go](https://golang.org/dl/) V1.13 or later
+- Yarn pakage manager
+
 ## Project setup
 
 ```
@@ -21,7 +27,7 @@ yarn build
 ### Lints and fixes files
 
 ```
-varn lint
+yarn lint
 ```
 
 ### Customize configuration
