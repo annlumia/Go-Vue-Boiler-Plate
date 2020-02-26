@@ -1,35 +1,41 @@
 # Go & Vue Boiler Plate
 
-Before start, please install:
+Sebelum memulai, mohon install tools yang diperlukan terlebih dahulu:
 
-- [NodeJs](https://nodejs.org/en/download/) v10 or later
-- [Go](https://golang.org/dl/) V1.13 or later
-- Yarn pakage manager
+- [NodeJs](https://nodejs.org/en/download/) v10 atau yang lebih baru
+- [Yarn](https://yarnpkg.com/getting-started/install) pakage manager
+- Jika ingin mengerjakan bagian backend nya, install [Go](https://golang.org/dl/) V1.13 atau yang lebih baru
 
-## Project setup
-
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
+Setelah semuanya terinstal, jika ingin mengerjakan bagian frontendnya (vue), jalankan perintah berikut untuk menginstall semua package yang dibutuhkan:
 
 ```
-yarn serve
+$ yarn install
 ```
 
-### Compiles and minifies for production
+## CLI - Command Line Interface
 
-```
-yarn build
-```
+Jika anda hanya mengerjakan bagian frontend/vue saja, anda bisa menjalankannya dengan perintah:
 
-### Lints and fixes files
-
-```
-yarn lint
+```sh
+$ yarn serve
 ```
 
-### Customize configuration
+Untuk meng-compile frontendnya saja, gunakan perintah:
 
-See [Vue Cli Configuration Reference](https://cli.vuejs.org/config/).
+```sh
+$ yarn build:ui
+```
+
+Untuk meng-compile backend saja, gunakan perintah:
+
+```sh
+$ yarn build:go
+```
+
+Untuk meng-compile frontend dan backend secara bersamaan ke dalam mode produksi, perintahnya adalah:
+
+```sh
+$ yarn build
+```
+
+> Hasil compile akan ada pada folder build.
